@@ -15,6 +15,7 @@ function GoalInput (props) {
     }
 
     return (
+    
         <View style={styles.inputContainer}>
         <TextInput
           style={styles.TextInput}
@@ -25,6 +26,7 @@ function GoalInput (props) {
 
         <Button title="Tap Me" onPress={addGoalHandeler} />
       </View>
+    
     );
 }
 
