@@ -29,7 +29,11 @@ export default function App() {
           data={goals}
           renderItem={(itemData) => {
             return (
-              <GoalItem ID={itemData.item.ID} text={itemData.item.text} onDelete={deleteHandeler} />
+              <GoalItem
+                ID={itemData.item.ID}
+                text={itemData.item.text}
+                onDelete={deleteHandeler}
+              />
             );
           }}
           KeyExtractor={(item, index) => {
